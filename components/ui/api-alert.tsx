@@ -3,8 +3,7 @@ import { FC } from 'react'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { CopyIcon, Server } from 'lucide-react';
 import { Badge, BadgeProps } from './badge';
-import { Button } from './button';
-import { string } from 'zod';
+import { Button } from './button'; 
 import { toast } from 'react-hot-toast';
 
 interface ApiAlertProps {
@@ -20,7 +19,7 @@ const textMap: Record<ApiAlertProps["varieant"],string> = {
 
 const variantMap: Record<ApiAlertProps["varieant"],BadgeProps["variant"]> = {
     public : "secondary",
-    admin : "desctructive"
+    admin : "destructive"
 };
 
 export const ApiAlert:FC<ApiAlertProps> = ({
