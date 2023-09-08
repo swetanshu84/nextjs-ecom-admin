@@ -5,14 +5,14 @@ import { Button } from '@/components/ui/button';
 import { ImagePlus, Trash } from 'lucide-react';
 import Image from 'next/image';
 
-interface imageUploadProps {
+interface ImageUploadProps {
     disabled?:boolean;
     onChange:(value:string)=>void;
     onRemove: (value:string)=>void;
     value:string[] 
 }
 
-const imageUpload: FC<imageUploadProps> = ({
+const ImageUpload: FC<ImageUploadProps> = ({
     disabled,onChange,onRemove,value
 }) => {
     const [isMounted, setIsMounted] = useState(false) ; 
@@ -58,4 +58,4 @@ const imageUpload: FC<imageUploadProps> = ({
     )
 }
 
-export default imageUpload;
+export default ImageUpload;
